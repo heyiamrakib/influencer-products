@@ -1,0 +1,145 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+  --font: #3a3a3a;
+  --button: #e02c6d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* Header part */
+header {
+  margin: 50px 120px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo h1 {
+  font-size: 24px;
+  color: var(--font);
+  font-weight: 700;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.nav-card {
+  margin-left: 34px;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-menu ul li {
+  list-style: none;
+  margin-left: 34px;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+/* section menu */
+.section-menu {
+  margin: 0 120px;
+}
+.section-menu-contain {
+  margin: 120px 0;
+  width: 50%;
+}
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-menu-contain h1 {
+  color: var(--font);
+  font-size: 52px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.section-menu-contain p {
+  color: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.section-menu-contain button {
+  background-color: var(--button);
+  color: white;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 5px 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.section-menu-contain button i {
+  margin-left: 10px;
+}
+.section-menu-image{
+    border: 1px solid rgb(223, 222, 222);
+    border-radius: 50%;
+    background-color: rgb(245, 247, 248);
+    
+}
+.section-menu-image img {
+   
+    width: 440px;
+    height: 414px;
+}
+
+
+
+
+/* Media part */
+@media screen and (max-width:687px) {
+    header {
+        margin: 50px 20px;
+      }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .nav-logo{
+        margin-bottom: 40px;
+    }
+    .nav-menu ul li {
+        margin-left: 20px;
+    }
+    .section-menu {
+        margin: 0 ;
+    }
+    .section-container {
+        flex-direction: column-reverse;
+    }
+    
+}
+@media screen and (min-width:688px) and (max-width:992px) {
+    header {
+        margin: 50px 20px;
+      }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .nav-logo{
+        margin-bottom: 40px;
+    }
+    .nav-menu ul li {
+        margin-left: 60px;
+    }
+    .section-menu {
+        margin: 0 ;
+    }
+    .section-container {
+        flex-direction: column-reverse;
+    }
+    
+}
