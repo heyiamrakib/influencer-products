@@ -108,7 +108,6 @@ header {
 .popular-collection {
   width: 80%;
   margin: auto;
-
 }
 .popular-collection h1 {
   text-align: center;
@@ -163,16 +162,80 @@ header {
   font-size: 16px;
   color: var(--font);
 }
-  .link {
-    color: var(--button);
-    font-size: 16px;
-    border-radius: 50px;
-    width: 115px;
-    float: right;
-    margin: 10px 0;
+.link {
+  color: var(--button);
+  font-size: 16px;
+  border-radius: 50px;
+  width: 115px;
+  float: right;
+  margin: 10px 0;
 }
-.link i{
+.link i {
   margin-left: 5px;
+}
+/* Featured product */
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.bottom-section-img img {
+  width: 400px;
+  height: 270px;
+}
+.bottom-menu-contain{
+  width: 54%;
+}
+.bottom-menu-contain h1 {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.bottom-menu-contain p {
+  color: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0;
+  width: 500px;
+  line-height: 30px;
+}
+/* Footer Part */
+footer{
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+.footer-content{
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+.footer-content h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+.footer-content p{
+  text-align: center;
+  font-size: 16px;
+  color: rgb(199, 197, 197);
+}
+.footer-content ul{
+  display: flex;
+  width: 15%;
+  margin: auto;
+  justify-content: space-around;
+}
+.footer-content ul li{
+  list-style: none;
+  background-color: rgb(34, 34, 34);
+  border-radius: 50%;
+  padding: 0 5px;
+  margin: 10px 0;
+  
 }
 /* Media part */
 @media screen and (max-width: 687px) {
@@ -199,6 +262,25 @@ header {
   .popular-collection-items {
     grid-template-columns: repeat(1, 1fr);
   }
+  .bottom-container{
+    flex-direction: column-reverse;
+  }
+  .bottom-menu-contain{
+    width: 80%;
+  }
+  .bottom-menu-contain p{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .bottom-menu-contain h1{
+    margin: auto;
+    text-align: center;
+  }
+  .bottom-menu-contain button{
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 688px) and (max-width: 992px) {
   header {
@@ -223,5 +305,24 @@ header {
   }
   .popular-collection-items {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .bottom-container{
+    flex-direction: column-reverse;
+  }
+  .bottom-menu-contain{
+    width: 80%;
+  }
+  .bottom-menu-contain p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .bottom-menu-contain h1{
+    margin: auto;
+    text-align: center;
+  }
+  .bottom-menu-contain button{
+    margin: auto;
+    margin-top: 20px;
   }
 }
